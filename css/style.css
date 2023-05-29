@@ -79,6 +79,7 @@ main{
 
 .clicked{
     background-color: blue;
+    pointer-events: none;
 }
 
 /*footer*/
@@ -89,4 +90,8 @@ footer{
     margin-top: 50px;
     padding: 17px;
     color: white;
+}
+
+.red{
+    background-color: red;
 }
