@@ -7,9 +7,17 @@ let button = document.getElementById('btn');
 //variabile select
 let select = document.getElementById('difficulty');
 
+//definizione constante array bombe
+let arrayBombs = [];
+
+//definizione funzione numero random
+function num_random(min, max){
+    return Math.floor(Math.random()*(max - min + 1) + min)
+}
+
 //funzione click bottone
 button.addEventListener('click',function(){
-    
+
     //svoto la griglia
     grid.innerHTML='';
 
