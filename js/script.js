@@ -67,6 +67,16 @@ button.addEventListener('click',function(){
                     alert(`hai perso Punteggio: ${clickforwin}`)
 
                     gameOver=false
+
+                    //variabile per far apparire bombe quando si perde
+                    let bombsCells = document.getElementById('grid').children
+                    for(let i=0; i<bombsCells.length; i++ ){
+                        let number = parseInt(bombsCells[i].innerText)
+
+                        if(arrayBombs.includes(number)){
+                            bombsCells[i].classList.add('red')
+                        }
+                    }
                 }
 
                 //numeri senza bomba
@@ -124,6 +134,16 @@ button.addEventListener('click',function(){
                     alert(`hai perso Punteggio: ${clickforwin}`)
 
                     gameOver=false
+
+                    //variabile per far apparire bombe quando si perde
+                    let bombsCells = document.getElementById('grid').children
+                    for(let i=0; i<bombsCells.length; i++ ){
+                        let number = parseInt(bombsCells[i].innerText)
+
+                        if(arrayBombs.includes(number)){
+                            bombsCells[i].classList.add('red')
+                        }
+                    }
                 }
 
                 //numeri senza bomba
@@ -177,6 +197,16 @@ button.addEventListener('click',function(){
                     alert(`hai perso Punteggio: ${clickforwin}`)
 
                     gameOver=false
+
+                    //variabile per far apparire bombe quando si perde
+                    let bombsCells = document.getElementById('grid').children
+                    for(let i=0; i<bombsCells.length; i++ ){
+                        let number = parseInt(bombsCells[i].innerText)
+
+                        if(arrayBombs.includes(number)){
+                            bombsCells[i].classList.add('red')
+                        }
+                    }
                 }
 
                 //numeri senza bomba
